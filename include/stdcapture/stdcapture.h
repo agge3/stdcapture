@@ -30,8 +30,7 @@
 #define STD_ERR_FD (fileno(stderr)) 
 #endif
 
-namespace std {
-namespace capture {
+namespace stdcapture {
 
 class CaptureOutput
 {
@@ -186,8 +185,7 @@ public :
 		CaptureOutput(stderr, STD_ERR_FD, callback) { }
 };
 
-} // namespace capture
-} // namespace std
+} // namespace stdcapture
 
 #endif // STDCAPTURE_H
 
